@@ -1,11 +1,9 @@
-import React from 'react';
-
 import { Typography } from '@mui/material';
 import { DetailsContainer, DetailsBody, DetailsList } from './styles';
-import { UserIP } from '../../interface/map';
+import { UserData } from '../../interface/map';
 
 interface Props {
-	data: UserIP;
+	data: UserData;
 }
 
 const Details = ({ data }: Props) => {

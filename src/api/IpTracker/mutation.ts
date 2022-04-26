@@ -5,7 +5,7 @@ import { UserKey } from '../../interface/map';
 
 const findUserIpAddress = async ({ apiKey }: UserKey) => {
 	const res = await axios.get(
-		`https://geo.ipify.org/api/v2/country?apiKey=${apiKey}`
+		`https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}`
 	);
 	return res.data;
 };
